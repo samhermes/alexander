@@ -1,14 +1,14 @@
 // Base - always included
 @import 'base/base';
-@import 'base/typography';
-@import 'base/lists';
 @import 'base/forms';
 
 // Elements - project by project
+@import 'elements/typography';
+@import 'elements/lists';
+@import 'elements/links';
 @import 'elements/blockquote';
 @import 'elements/code';
 @import 'elements/hr';
-@import 'elements/links';
 @import 'elements/table';
 
 // Components - as needed
