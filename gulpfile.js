@@ -1,14 +1,11 @@
 'use strict';
 
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  sourcemaps = require('gulp-sourcemaps');
+  sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-  var styleSass = gulp.src('./src/sass/index.scss')
-    .pipe(sourcemaps.init())
+  var styleSass = gulp.src('./src/sass/alexander.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/css'));
   return styleSass;
 });
