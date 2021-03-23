@@ -6,7 +6,8 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
   var styleSass = gulp.src('./src/sass/alexander.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./docs/css'));
   return styleSass;
 });
 
