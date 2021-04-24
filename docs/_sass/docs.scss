@@ -1,3 +1,12 @@
+$blue-dark: #070d59;
+$blue-medium: #1f3c88;
+$blue-light: #5893d4;
+$blue-extra-light: #ceddef;
+
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: $blue-extra-light;
 }
+
+@import "global";
+@import "home";

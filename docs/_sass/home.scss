@@ -1,0 +1,47 @@
+.home-intro {
+    width: 100%;
+    height: 100vh;
+    background-color: #070d59;
+    color: #ceddef;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .emoji {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .subhead {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #5893d4;
+        line-height: 1.2;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+
+    .get {
+        font-size: 1.2rem;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #ceddef;
+        }
+    }
+
+    .version {
+        margin-bottom: 0;
+    }
+}

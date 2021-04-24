@@ -8,20 +8,10 @@
     <link href="/css/alexander.css" rel="stylesheet">
     <link href="/css/docs.css" rel="stylesheet">
 
-    <title>{{ page.title | Alexander }}</title>
+    <title>Alexander</title>
   </head>
   <body>
-    {% include header.html %}
-    
-    <main class="site-main">
-      <nav class="page-nav">
-        
-      </nav>
-      <div class="page-content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </div>
-    </main>
+    {{ content }}
 
     {% include footer.html %}
   </body>
