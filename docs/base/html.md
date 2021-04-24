@@ -24,3 +24,7 @@ Basic markup to start with. I pulled some of this from Bootstrap, and some from 
 </body>
 </html>
 ```
+
+Sources:
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template
+- https://www.matuzo.at/blog/html-boilerplate/
