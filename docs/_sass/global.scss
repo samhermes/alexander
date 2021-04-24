@@ -22,8 +22,6 @@
 
 .site-main {
     display: grid;
-    max-width: 75rem;
-    margin: 2rem auto;
 
     @media screen and (min-width: 40em) {
         grid-template-columns: 1fr 3fr;
