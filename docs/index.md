@@ -14,8 +14,9 @@ layout: home
 
 <div class="home-docs">
     <h2>Learn how to use Alexander</h2>
-    <ul>
-        <li><a href="{{ site.baseurl }}/base/html">HTML</a></li>
-        <li><a href="{{ site.baseurl }}/examples/blockquote">Blockquote</a></li>
+    <ul class="home-sections">
+        <li><a href="{{ site.baseurl }}/base/html">Base</a></li>
+        <li><a href="{{ site.baseurl }}/base/blockquote">Elements</a></li>
+        <li><a href="{{ site.baseurl }}/examples/accordion">Components</a></li>
     </ul>
 </div>
