@@ -10,6 +10,7 @@ body {
 
 @import "global";
 @import "home";
+@import "code";
 
 @media screen and (prefers-reduced-motion: no-preference) {
     @import "home-dots";
