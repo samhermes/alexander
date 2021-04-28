@@ -2,6 +2,8 @@
 layout: home
 ---
 
+<div class="dots-bg"></div>
+<div class="dots-2-bg"></div>
 <div class="home-intro">
     <div class="emoji">🧭</div>
     <h1 class="title">Alexander</h1>
