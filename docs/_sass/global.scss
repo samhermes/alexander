@@ -40,6 +40,12 @@ body {
 
 .site-footer {
     padding: 1rem 1.5rem;
+    background: $blue-dark;
+    color: #fff;
+
+    a {
+        color: inherit;
+    }
 
     p {
         margin-bottom: 0;
@@ -48,6 +54,16 @@ body {
     .site-title {
         font-size: 1.5rem;
         font-weight: 600;
+
+        a {
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: underline;
+            }
+        }
     }
 
     .subhead {
