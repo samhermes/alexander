@@ -17,8 +17,8 @@ layout: home
 <div class="home-docs">
     <h2>Learn how to use Alexander</h2>
     <ul class="home-sections">
-        <li><a href="{{ site.baseurl }}/base/html">Base</a></li>
-        <li><a href="{{ site.baseurl }}/base/blockquote">Elements</a></li>
-        <li><a href="{{ site.baseurl }}/examples/accordion">Components</a></li>
+        <li><a href="{{ site.baseurl }}/base/html">{% include icons/anchor.svg %}Base</a></li>
+        <li><a href="{{ site.baseurl }}/elements/blockquote">{% include icons/box.svg %}Elements</a></li>
+        <li><a href="{{ site.baseurl }}/components/accordion">{% include icons/compass.svg %}Components</a></li>
     </ul>
 </div>
