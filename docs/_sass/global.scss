@@ -1,6 +1,5 @@
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background: $blue-extra-light;
 }
 
 .site-header {
@@ -30,6 +29,32 @@ body {
 
     @media screen and (min-width: 40em) {
         grid-template-columns: 1fr 3fr;
+    }
+}
+
+.page-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-top {
+        background: $blue-extra-light;
+        margin: 2rem;
+        border-radius: 0.5rem;
+        padding: 1rem 1.2rem;
+
+        > li {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .nav-parent {
+        font-weight: 600;
+        color: $blue-dark;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
     }
 }
 
