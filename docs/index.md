@@ -5,7 +5,7 @@ layout: home
 <div class="dots-bg"></div>
 <div class="dots-2-bg"></div>
 <div class="home-intro">
-    <div class="emoji">{% include icons/logo.svg %}</div>
+    <div class="site-icon">{% include icons/logo.svg %}</div>
     <h1 class="title">Alexander</h1>
     <p class="subhead">Front-End Framework</p>
     <div class="get">
