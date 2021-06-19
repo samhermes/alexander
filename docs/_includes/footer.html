@@ -7,3 +7,13 @@
         <p>Created by <a href="https://samhermes.com">Sam Hermes</a></p>
     </div>
 </footer>
+
+<script>
+    var menuButton = document.querySelector('.menu-toggle');
+    var menu = document.querySelector('.nav-top');
+    if (menuButton) {
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    }
+</script>

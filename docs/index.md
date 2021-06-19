@@ -29,16 +29,16 @@ layout: home
 </section>
 
 <section class="home-download">
-        <div class="download-intro">
-            <h2>Download and get started</h2>
-            <p>Including Alexander in your own project is easy. Start with the base bundle for unopinionated starter styles, or include the design bundle to get a set of ready-made components.</p>
-        </div>
-        <ul class="download-list">
-            <li><a href="alexander-1.0.0-base.zip">{% include icons/arrow-down-circle.svg %}Bundle - Base</a></li>
-            <li><a href="alexander-1.0.0-design.zip">{% include icons/arrow-down-circle.svg %}Bundle - Design</a></li>
-            <li><a href="alexander-1.0.0.zip">{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
-            <li class="download-source"><a href="alexander-1.0.0-source.zip">{% include icons/arrow-down-circle.svg %}All Source Files</a></li>
-        </ul>
+    <div class="download-intro">
+        <h2>Download and get started</h2>
+        <p>Including Alexander in your own project is easy. Start with the base bundle for unopinionated starter styles, or include the design bundle to get a set of ready-made components.</p>
+    </div>
+    <ul class="download-list">
+        <li><a href="alexander-1.0.0-base.zip">{% include icons/arrow-down-circle.svg %}Bundle - Base</a></li>
+        <li><a href="alexander-1.0.0-design.zip">{% include icons/arrow-down-circle.svg %}Bundle - Design</a></li>
+        <li><a href="alexander-1.0.0.zip">{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
+        <li class="download-source"><a href="alexander-1.0.0-source.zip">{% include icons/arrow-down-circle.svg %}All Source Files</a></li>
+    </ul>
 </section>
 
 <!-- <section class="home-browser-support">

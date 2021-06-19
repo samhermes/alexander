@@ -32,7 +32,7 @@ body {
 }
 
 .site-main {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem 2rem;
     max-width: 80em;
     margin: 0 auto;
     
@@ -56,10 +56,36 @@ body {
         padding: 0;
     }
 
+    .menu-toggle {
+        width: 100%;
+        display: block;
+        margin-bottom: 1.2rem;
+        background: $blue-extra-light;
+        color: $blue-dark;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+
+        @media screen and (min-width: 50em) {
+            display: none;
+        }
+    }
+
     .nav-top {
         background: $blue-extra-light;
         border-radius: 0.3rem;
         padding: 1rem 1.2rem;
+        display: none;
+
+        @media screen and (min-width: 50em) {
+            display: block;
+        }
+
+        &.active {
+            display: block;
+        }
 
         > li {
             margin-bottom: 2rem;
