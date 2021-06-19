@@ -1,5 +1,8 @@
 ---
 title: SVGs
+sources:
+- https://www.callumhart.com/blog/an-accessible-current-page-navigation-state/
+- https://kittygiraudel.com/2020/12/10/accessible-icon-links/
 ---
 
 It's best to inline SVGs if possible, as this cuts out an HTTP request, and makes them easier to style depending on their context.
@@ -15,7 +18,3 @@ It's also good to add a height and width to the SVG element itself, in the event
 ```markup
 width="1em" height="1em"
 ```
-
-Sources:
-- [callumhart.com/blog/an-accessible-current-page-navigation-state](https://www.callumhart.com/blog/an-accessible-current-page-navigation-state/)
-- [kittygiraudel.com/2020/12/10/accessible-icon-links](https://kittygiraudel.com/2020/12/10/accessible-icon-links/)

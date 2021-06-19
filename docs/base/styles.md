@@ -1,6 +1,10 @@
 ---
 title: Styles
+sources:
+- https://getbootstrap.com/docs/5.0/content/reboot/
+- https://github.com/necolas/normalize.css/
 ---
+
 There is less of a reason for a reset or normalize at this point in time, with browsers getting more consistent in their default stylesheet. However, there are some things that still need some adjustment. This focuses more on the browser inconsistencies and less on default styles. With this framework, I wanted to see if I could separate these two, as I find many of the starting stylesheets in use today try to do too much, and many of their styles are simply overwritten by project-specific styles.
 
 I took from Bootstrap Reboot and normalize.css to make this.
@@ -75,7 +79,3 @@ progress {
     display: none !important;
 }
 ```
-
-Sources:
-- https://getbootstrap.com/docs/5.0/content/reboot/
-- https://github.com/necolas/normalize.css/

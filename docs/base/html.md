@@ -1,7 +1,13 @@
 ---
 title: HTML
+sources:
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template
+- https://www.matuzo.at/blog/html-boilerplate/
+- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons
 ---
-Basic markup to start with. I pulled some of this from Bootstrap, and some from [this article by Manuel Matuzović](https://www.matuzo.at/blog/html-boilerplate/).
+
+Every page starts somewhere! This is very basic markup to start with. This sets the language of the page using the `lang` attribute on `html`, it sets the character set using `<meta charset="UTF-8">`, makes the page responsive with `<meta name="viewport" content="width=device-width">`, adds proper meta for the site icon, and gives us a class of `no-js` to use in the event that JavaScript fails to load.
 
 ```html
 <!DOCTYPE html>
@@ -32,6 +38,8 @@ Basic markup to start with. I pulled some of this from Bootstrap, and some from 
 
 ## Manifest file
 
+A manifest file can define icons, in addition to the icons defined above, for those browsers that wish to take advantage of them.
+
 ```json
 {
   "icons": [
@@ -41,7 +49,6 @@ Basic markup to start with. I pulled some of this from Bootstrap, and some from 
 }
 ```
 
-Sources:
-- https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template
-- https://www.matuzo.at/blog/html-boilerplate/
-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+## Images
+
+Images should have a width and height attribute so that the browser knows how much space to reserve for them, and they should include an alt attribute, even if empty, for screen readers.
