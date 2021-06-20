@@ -129,6 +129,13 @@ body {
     }
 }
 
+.stage {
+    background: rgba($blue-extra-light, 0.3);
+    box-shadow: 0 0 15px rgba(88, 147, 212, 0.2) inset;
+    padding: 3rem 10%;
+    margin-bottom: 2rem;
+}
+
 .site-footer {
     padding: 1.5rem 1.5rem 2.5rem;
     background: $blue-dark;

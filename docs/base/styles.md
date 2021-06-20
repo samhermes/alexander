@@ -57,6 +57,11 @@ figure {
     margin: 0 0 1rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 img,
 svg {
     vertical-align: middle;
