@@ -130,10 +130,14 @@ body {
 }
 
 .stage {
-    background: rgba($blue-extra-light, 0.3);
-    box-shadow: 0 0 15px rgba(88, 147, 212, 0.2) inset;
-    padding: 3rem 10%;
-    margin-bottom: 2rem;
+    background-color: rgba($blue-extra-light, 0.2);
+    border-radius: 0.3rem;
+    padding: 2rem;
+    margin: 2rem 0;
+
+    @media screen and (min-width: 50em) {
+        padding: 3rem 10%;
+    }
 }
 
 .site-footer {

@@ -1,0 +1,20 @@
+.input-group {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border: 2px solid currentColor;
+    border-radius: $border-radius;
+}

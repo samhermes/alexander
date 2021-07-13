@@ -1,8 +1,10 @@
+@import 'variables';
+
 // Base - always included
 @import 'base/base';
 @import 'base/screen-reader-text';
 @import 'base/skip-link';
-@import 'base/forms';
+@import 'base/form';
 
 // Elements - project by project
 @import 'elements/typography';
@@ -14,4 +16,4 @@
 @import 'elements/table';
 
 // Components - as needed
-@import 'components/card';
+@import 'components/form';

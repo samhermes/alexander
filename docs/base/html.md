@@ -49,6 +49,10 @@ A manifest file can define icons, in addition to the icons defined above, for th
 }
 ```
 
+## async vs defer
+
+When adding a script, it's important to consider when the script needs to execute, and load it no earlier than necessary. Here's a great article explaining the options: [https://zellwk.com/blog/javascript-async-and-defer/](https://zellwk.com/blog/javascript-async-and-defer/)
+
 ## Images
 
 Images should have a width and height attribute so that the browser knows how much space to reserve for them, and they should include an alt attribute, even if empty, for screen readers.
