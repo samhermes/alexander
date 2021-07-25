@@ -57,12 +57,22 @@ figure {
 
 img {
     max-width: 100%;
+    display: block;
     height: auto;
 }
 
 img,
 svg {
     vertical-align: middle;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #303030;
 }
 
 iframe {
@@ -80,4 +90,27 @@ progress {
 
 [hidden] {
     display: none !important;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
 }

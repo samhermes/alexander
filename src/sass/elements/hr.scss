@@ -1,11 +1,6 @@
 hr {
-    margin: 1rem 0;
-    color: #eee;
+    margin: 2rem 0;
     background-color: currentColor;
     border: 0;
-    opacity: 0.25;
-}
-
-hr:not([size]) {
-    height: 0.0625rem;
+    height: 0.125rem;
 }

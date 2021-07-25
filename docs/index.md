@@ -8,7 +8,7 @@ layout: home
 <div class="home-intro">
     <div class="site-icon">{% include icons/logo.svg %}</div>
     <h1 class="title">Alexander</h1>
-    <p class="subhead">Front-End Framework</p>
+    <p class="subhead">Front-End Starter Kit</p>
     <div class="get">
         <p class="version">Version 1.0.0</p>
         <a href="https://github.com/samhermes/alexander">
@@ -20,7 +20,7 @@ layout: home
 
 <section class="home-docs">
     <h2>Learn how to use Alexander</h2>
-    <p>Alexander was built in two distinct levels, the base level that includes browser consistency styles and standard accessibility features, and a design level, broken out into elements and components. Include just the base level in your project and layer on your own design, or include all for a jump start.</p>
+    <p>Alexander was built in two distinct levels, the base level that includes browser consistency styles and standard accessibility features, and an implementation level, broken out into elements and components. Include just the base level in your project and or include all for a jump start.</p>
     <ul class="docs-entry">
         <li><a href="{{ site.baseurl }}/base/html">{% include icons/anchor.svg %}Base</a></li>
         <li><a href="{{ site.baseurl }}/elements/blockquote">{% include icons/box.svg %}Elements</a></li>
