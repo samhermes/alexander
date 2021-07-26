@@ -3,6 +3,7 @@ title: Tabs
 ---
 
 <div class="stage">
+    <button type="button" class="stage-toggle">Toggle Stage Styles</button>
     <div class="tabs">
         <ul role="tablist">
             <li role="presentation">

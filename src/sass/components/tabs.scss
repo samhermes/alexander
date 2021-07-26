@@ -8,24 +8,12 @@
         display: block;
         background: none;
         border: none;
-        border-radius: $border-radius $border-radius 0 0;
         color: $text-color;
-        padding: 0.5rem 1rem;
         margin: 0;
-
-        &[aria-selected="true"] {
-            background: #fff;
-        }
     }
 }
 
 [role="tabpanel"] {
-    padding: 2rem 2.5rem;
-
-    &[aria-hidden="false"] {
-        background: #fff;
-    }
-
     &:not([aria-hidden="false"]) {
         display: none;
     }

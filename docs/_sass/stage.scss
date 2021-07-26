@@ -54,3 +54,22 @@ textarea {
     border: 2px solid currentColor;
     border-radius: $border-radius;
 }
+
+[role="tablist"] {
+    button {
+        border-radius: $border-radius $border-radius 0 0;
+        padding: 0.5rem 1rem;
+
+        &[aria-selected="true"] {
+            background: #fff;
+        }
+    }
+}
+
+[role="tabpanel"] {
+    padding: 2rem 2.5rem;
+
+    &[aria-hidden="false"] {
+        background: #fff;
+    }
+}
