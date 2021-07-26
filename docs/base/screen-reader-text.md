@@ -4,18 +4,18 @@ sources:
 - https://getbootstrap.com/docs/5.0/helpers/visually-hidden/
 ---
 
-Screen reader text is used to visually hide text, but leave it accessible to screen readers. This is useful for buttons that only display an icon, or for giving more context to links.
+Screen reader text is used to visually hide text, but leave it accessible to screen readers. This is useful for buttons that only display an icon, or for giving more context to links if needed.
 
 ```css
 .screen-reader-text {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 ```

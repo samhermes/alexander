@@ -8,7 +8,7 @@
         display: block;
         background: none;
         border: none;
-        border-radius: 0.3rem 0.3rem 0 0;
+        border-radius: $border-radius $border-radius 0 0;
         color: $text-color;
         padding: 0.5rem 1rem;
         margin: 0;

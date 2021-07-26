@@ -1,5 +1,6 @@
 .accordion-heading {
     cursor: pointer;
+    position: relative;
 
     h2, h3, h4, h5, h6 {
         font-size: 1.3rem;
@@ -22,8 +23,8 @@
 
 .accordion-content {
     visibility: hidden;
-    padding: 0 1.5rem;
     height: 0;
+    
 
     & > * {
         visibility: visible;
@@ -35,6 +36,7 @@
     .is-active & {
         visibility: visible;
         height: auto;
+        margin-bottom: 1rem;
 
         & > * {
             opacity: 100;
@@ -50,6 +52,6 @@
 
     & > :last-child {
         margin-bottom: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
 }

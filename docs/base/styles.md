@@ -4,6 +4,7 @@ sources:
 - https://getbootstrap.com/docs/5.0/content/reboot/
 - https://github.com/necolas/normalize.css/
 - https://piccalil.li/blog/a-modern-css-reset/
+- https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/
 ---
 
 There is less of a reason for a reset or normalize at this point in time, with browsers getting more consistent in their default stylesheet. However, there are some things that still need some adjustment. This focuses more on the browser inconsistencies and less on default styles. With this starter kit, I wanted to see if I could separate these two, as I find many of the starting stylesheets in use today try to do too much, and many of their styles are simply overwritten by project-specific styles.
@@ -117,8 +118,12 @@ ul ol {
 }
 ```
 
+## A note about fonts
+
 Beyond these basics, if a project does not have a custom font in play, system fonts are a great choice. The current best declaration for this is as follows.
 
 ```css
 font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 ```
+
+Loading custom fonts: [iainbean.com/posts/2021/5-steps-to-faster-web-fonts](https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/)

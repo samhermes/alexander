@@ -31,15 +31,15 @@ body {
     }
 }
 
-.site-main {
+.page {
     padding: 1.5rem 1.5rem 2rem;
     max-width: 80em;
     margin: 0 auto;
     
     @media screen and (min-width: 50em) {
         display: grid;
-        grid-gap: 5%;
-        grid-template-columns: minmax(225px, 25%) minmax(0, 1fr);
+        grid-gap: 7%;
+        grid-template-columns: minmax(225px, 22%) minmax(0, 1fr);
     }
 }
 
@@ -74,7 +74,7 @@ body {
     }
 
     .nav-top {
-        background: $blue-extra-light;
+        background-color: rgba($blue-extra-light, 0.2);
         border-radius: 0.3rem;
         padding: 1rem 1.2rem;
         display: none;
@@ -125,7 +125,7 @@ body {
     }
 
     .page-title {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
 
         @media screen and (min-width: 50em) {
             font-size: 2.6rem;
@@ -161,7 +161,8 @@ body {
 
             a {
                 padding: 0.2rem 0.5rem 0.3rem;
-                background: #eee;
+                background-color: rgba($blue-extra-light, 0.2);
+                color: $blue-dark;
                 border-radius: 0.5rem;
                 display: inline-block;
             }
