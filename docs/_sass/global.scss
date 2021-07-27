@@ -34,6 +34,7 @@ body {
 .page {
     padding: 1.5rem 1.5rem 2rem;
     max-width: 80em;
+    min-height: calc(100vh - 8.75rem);
     margin: 0 auto;
     
     @media screen and (min-width: 50em) {
@@ -112,6 +113,38 @@ body {
         &:focus,
         &:active {
             text-decoration: underline;
+        }
+    }
+}
+
+.page-grid {
+    display: grid;
+    grid-gap: 1rem;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+
+    @media screen and (min-width: 37.5em) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    li {
+        font-size: 1.2rem;
+
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 1rem 1.5rem;
+            color: $blue-dark;
+            box-shadow: 0 2px 6px rgba(205, 220, 238, 0.58);
+            border: 2px solid transparent;
+            border-radius: 0.8rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border: 2px solid $blue-medium;
+            }
         }
     }
 }

@@ -66,15 +66,6 @@ svg {
     vertical-align: middle;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
 a {
     color: $text-color;
 }
@@ -94,27 +85,4 @@ progress {
 
 [hidden] {
     display: none !important;
-}
-
-blockquote {
-    margin: 0 0 1rem;
-}
-
-ol,
-ul {
-    padding-left: 2rem;
-}
-
-ol,
-ul,
-dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-    margin-bottom: 0;
 }

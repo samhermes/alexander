@@ -9,18 +9,18 @@ Accordions should be thought of as simply pairs of headings and their correspond
     <button type="button" class="stage-toggle">Toggle Stage Styles</button>
     <div class="accordion">
         <div class="accordion-heading">
-            <h2>Accordion heading</h2>
+            <h2>Accordion 1 heading</h2>
         </div>
         <div class="accordion-content">
-            <p>Accordion content</p>
+            <p>Accordion 1 content</p>
         </div>
     </div>
     <div class="accordion">
         <div class="accordion-heading">
-            <h2>Accordion heading</h2>
+            <h2>Accordion 2 heading</h2>
         </div>
         <div class="accordion-content">
-            <p>Accordion content</p>
+            <p>Accordion 2 content</p>
         </div>
     </div>
 </div>
@@ -28,3 +28,14 @@ Accordions should be thought of as simply pairs of headings and their correspond
 There are several conditions that we need to keep in mind with this accordion:
 - No JavaScript enabled
 - User prefers reduced motion
+
+```html
+<div class="accordion">
+    <div class="accordion-heading">
+        <h2>Accordion 1 heading</h2>
+    </div>
+    <div class="accordion-content">
+        <p>Accordion 1 content</p>
+    </div>
+</div>
+```

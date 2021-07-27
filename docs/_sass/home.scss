@@ -119,7 +119,7 @@ section {
 }
 
 .home-download {
-    background: $blue-extra-light;
+    background-color: rgba($blue-extra-light, 0.2);
     
     @media screen and (min-width: 37.5em) {
         display: grid;
@@ -134,7 +134,12 @@ section {
     }
 
     p {
-        max-width: 28rem;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 37.5em) {
+            max-width: 28rem;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -152,7 +157,7 @@ section {
             padding: 0.5rem 1rem;
             color: $blue-dark;
             background-color: #fff;
-            border: 2px solid $blue-extra-light;
+            border: 2px solid #fff;
             border-radius: 0.5rem;
     
             &:hover,
@@ -173,13 +178,14 @@ section {
 
             a {
                 background: $blue-dark;
+                border-color: $blue-dark;
                 color: #fff;
 
                 &:hover,
                 &:active,
                 &:focus {
                     background: $blue-medium;
-                    border: 2px solid $blue-extra-light;
+                    border-color: $blue-medium;
                 }
             }
         }

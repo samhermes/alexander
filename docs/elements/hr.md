@@ -10,6 +10,10 @@ I prefer to style it to match the current text color of its container using `cur
     <hr>
 </div>
 
+```html
+<hr>
+```
+
 ```css
 hr {
     margin: 1rem 0;

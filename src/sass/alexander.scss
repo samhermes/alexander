@@ -7,12 +7,16 @@
 @import 'base/form';
 
 // Elements - project by project
+@import 'elements/blockquote';
 @import 'elements/heading';
 @import 'elements/code';
 @import 'elements/hr';
+@import 'elements/list';
+@import 'elements/paragraph';
 @import 'elements/table';
 
 // Components - as needed
 @import 'components/accordion';
 @import 'components/form';
+@import 'components/icon-list';
 @import 'components/tabs';

@@ -4,6 +4,7 @@
 
 .accordion-heading {
     button {
+        padding: 1rem 1.5rem;
         transition: background-color 0.2s;
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
@@ -46,6 +47,7 @@
     .is-active & {
         background: #fff;
         border-color: currentColor;
+        margin-bottom: 1rem;
     }
 }
 
@@ -53,6 +55,18 @@ input[type="text"],
 textarea {
     border: 2px solid currentColor;
     border-radius: $border-radius;
+}
+
+.icon-list {
+    li {
+        &::before {
+            background-image: url('../img/info.svg');
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
 
 [role="tablist"] {
