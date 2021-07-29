@@ -35,7 +35,7 @@ layout: home
     </div>
     <ul class="download-list">
         <li><a href="/alexander/css/alexander-base.css" download>{% include icons/arrow-down-circle.svg %}Bundle - Base</a></li>
-        <li><a href="/alexander/css/alexander.css">{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
+        <li><a href="/alexander/css/alexander.css" download>{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
         <li class="download-source"><a href="https://github.com/samhermes/alexander/archive/refs/heads/master.zip">{% include icons/arrow-down-circle.svg %}All Source Files</a></li>
     </ul>
 </section>
