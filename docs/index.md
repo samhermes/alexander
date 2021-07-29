@@ -34,8 +34,8 @@ layout: home
         <p>Including Alexander in your own project is easy. Start with the base bundle for unopinionated starter styles, or include the design bundle to get a set of ready-made components.</p>
     </div>
     <ul class="download-list">
-        <li><a href="/css/alexander-base.css" download>{% include icons/arrow-down-circle.svg %}Bundle - Base</a></li>
-        <li><a href="/css/alexander.css">{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
+        <li><a href="/alexander/css/alexander-base.css" download>{% include icons/arrow-down-circle.svg %}Bundle - Base</a></li>
+        <li><a href="/alexander/css/alexander.css">{% include icons/arrow-down-circle.svg %}Bundle - Full</a></li>
         <li class="download-source"><a href="https://github.com/samhermes/alexander/archive/refs/heads/master.zip">{% include icons/arrow-down-circle.svg %}All Source Files</a></li>
     </ul>
 </section>
