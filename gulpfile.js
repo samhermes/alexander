@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     minify = require('gulp-minify');
 
 gulp.task('sass', function () {
-  var styleSass = gulp.src('./src/sass/alexander.scss')
+  var styleSass = gulp.src(['./src/sass/alexander.scss', './src/sass/alexander-base.scss'])
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))
     .pipe(gulp.dest('./docs/css'));
