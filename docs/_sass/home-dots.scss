@@ -14,6 +14,10 @@
   text-shadow: $text-shadow;
 }
 
+.home-intro {
+  background-color: transparent; /* Override fallback if user prefers motion */
+}
+
 .dots-bg,
 .dots-2-bg {
   width: 100vw;
