@@ -39,7 +39,3 @@ layout: home
         <li class="download-source"><a href="https://github.com/samhermes/alexander/archive/refs/heads/master.zip">{% include icons/arrow-down-circle.svg %}All Source Files</a></li>
     </ul>
 </section>
-
-<!-- <section class="home-browser-support">
-    <h2>Browser Support</h2>
-</section> -->

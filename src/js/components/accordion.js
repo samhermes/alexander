@@ -1,6 +1,6 @@
-accordion = document.querySelectorAll('.accordion');
+const accordions = document.querySelectorAll('.accordion');
 
-accordion.forEach((accordion, index) => {
+accordions.forEach((accordion, index) => {
     const heading = accordion.querySelector('.accordion-heading')
     const content = accordion.querySelector('.accordion-content')
     const headingChildren = accordion.querySelector('.accordion-heading > *');
