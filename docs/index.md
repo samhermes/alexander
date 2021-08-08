@@ -20,11 +20,11 @@ layout: home
 
 <section class="home-docs">
     <h2>Learn how to use Alexander</h2>
-    <p>Alexander was built in two distinct levels, the base level that includes browser consistency styles and standard accessibility features, and an implementation level, broken out into elements and components. Include just the base level in your project and or include all for a jump start.</p>
+    <p>Alexander was built in two distinct levels, a base level that includes browser consistency styles and standard accessibility features, and an implementation level, broken out into elements and components. Include just the base level in your project and or include all for a jump start.</p>
     <ul class="docs-entry">
         <li><a href="{{ site.baseurl }}/base">{% include icons/anchor.svg %}Base</a></li>
-        <li><a href="{{ site.baseurl }}/elements">{% include icons/box.svg %}Elements</a></li>
-        <li><a href="{{ site.baseurl }}/components">{% include icons/compass.svg %}Components</a></li>
+        <li><a href="{{ site.baseurl }}/elements">{% include icons/code.svg %}Elements</a></li>
+        <li><a href="{{ site.baseurl }}/components">{% include icons/box.svg %}Components</a></li>
     </ul>
 </section>
 
