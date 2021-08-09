@@ -2,52 +2,55 @@
  * Adjustments to elements and components for display on stage.
  */
 
-.accordion-heading {
-    button {
-        padding: 1rem 1.5rem;
-        transition: background-color 0.2s;
-        border-top: 2px solid transparent;
-        border-left: 2px solid transparent;
-        border-right: 2px solid transparent;
-        border-radius: $border-radius $border-radius 0 0;
-
-        &::after {
-            content: '';
-            width: 2rem;
-            height: 2rem;
-            position: absolute;
-            top: 50%;
-            right: 1.5rem;
-            transform: translateY(-50%);
-            background: url('../img/accordion/chevron-down.svg') no-repeat center;
-            background-size: 2rem;
-        }
-    }
-
-    .is-active & {
+.js {
+    .accordion-heading {
         button {
-            background: #fff;
-            border-color: currentColor;
+            padding: 1rem 6rem 1rem 1.5rem;
+            transition: background-color 0.2s;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: $border-radius $border-radius 0 0;
 
             &::after {
-                transform: translateY(-50%) scaleY(-1);
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: 50%;
+                right: 1.5rem;
+                transform: translateY(-50%);
+                background: url('../img/accordion/chevron-down.svg') no-repeat center;
+                background-size: 2rem;
             }
         }
     }
-}
 
-.accordion-content {
-    padding: 0 1.5rem;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    transition: background-color 0.2s;
-    border-radius: 0 0 $border-radius $border-radius;
+    .accordion-content {
+        padding: 0 1.5rem;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        // transition: background-color 0.2s;
+        border-radius: 0 0 $border-radius $border-radius;
+    }
 
-    .is-active & {
-        background: #fff;
-        border-color: currentColor;
-        margin-bottom: 1rem;
+    .is-active {
+        .accordion-heading {
+            button {
+                background: #fff;
+                border-color: currentColor;
+
+                &::after {
+                    transform: translateY(-50%) scaleY(-1);
+                }
+            }
+        }
+        
+        .accordion-content {
+            background: #fff;
+            border-color: currentColor;
+        }
     }
 }
 

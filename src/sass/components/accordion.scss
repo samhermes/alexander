@@ -1,56 +1,56 @@
-.accordion-heading {
-    cursor: pointer;
-    position: relative;
+.accordion {
+    margin-bottom: 2rem;
 
-    h2, h3, h4, h5, h6 {
-        font-size: 1.3rem;
-        margin: 0;
-    }
-
-    button {
-        background: none;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
-        color: inherit;
-        display: block;
-        width: 100%;
-        text-align: left;
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
-.accordion-content {
-    visibility: hidden;
-    height: 0;
-    
-
-    & > * {
-        visibility: visible;
-        pointer-events: none;
-        opacity: 0;
-        transform: translateY(-2rem);
+.js {
+    .accordion {
+        margin-bottom: 0.5rem;
     }
 
-    .is-active & {
-        visibility: visible;
-        height: auto;
+    .accordion-heading {
+        cursor: pointer;
+        position: relative;
 
-        & > * {
-            opacity: 100;
-            pointer-events: visible;
-            transform: translateY(0);
-            transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+        h2, h3, h4, h5, h6 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        button {
+            background: none;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            color: inherit;
+            display: block;
+            width: 100%;
+            text-align: left;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
         }
     }
 
-    & > :first-child {
-        padding-top: 1rem;
-    }
+    .accordion-content {
+        overflow: hidden;
+        transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+        height: 0;
 
-    & > :last-child {
-        margin-bottom: 0;
-        padding-bottom: 2rem;
+        & > :first-child {
+            padding-top: 1rem;
+        }
+
+        & > :last-child {
+            margin-bottom: 0;
+            padding-bottom: 2rem;
+        }
     }
 }
