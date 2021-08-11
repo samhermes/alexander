@@ -3,7 +3,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
-    minify = require('gulp-minify');
+    minify = require('gulp-minify'),
+    eslint = require('gulp-eslint');
 
 gulp.task('sass', function () {
   var styleSass = gulp.src(['./src/sass/alexander.scss', './src/sass/alexander-base.scss'])
@@ -25,6 +26,14 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./dist/js'))
     .pipe(gulp.dest('./docs/js'));
   return js;
+});
+
+gulp.task('lint', function () {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(eslint({fix:true}))
+    .pipe(eslint.format())
+    .pipe(gulp.dest(file => file.base))
+    .pipe(eslint.failAfterError());
 });
 
 gulp.task('watch', function () {
