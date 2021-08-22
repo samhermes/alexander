@@ -29,9 +29,9 @@ accordions.forEach((accordion, index) => {
 })
 
 const openAccordion = (accordion, elements) => {
-    const sectionHeight = elements.content.scrollHeight
+    const contentHeight = elements.content.scrollHeight
     
-    elements.content.style.height = sectionHeight + 'px'
+    elements.content.style.height = contentHeight + 'px'
     elements.content.addEventListener('transitionend', function(){
         elements.content.removeEventListener('transitionend', arguments.callee)
         elements.content.style.height = 'auto'
@@ -41,12 +41,12 @@ const openAccordion = (accordion, elements) => {
 }
 
 const closeAccordion = (accordion, elements) => {
-    const sectionHeight = elements.content.scrollHeight
+    const contentHeight = elements.content.scrollHeight
     const elementTransition = elements.content.style.transition
     elements.content.style.transition = ''
 
     requestAnimationFrame(() => {
-        elements.content.style.height = sectionHeight + 'px'
+        elements.content.style.height = contentHeight + 'px'
         elements.content.style.transition = elementTransition
         requestAnimationFrame(() => {
             elements.content.style.height = 0 + 'px'
