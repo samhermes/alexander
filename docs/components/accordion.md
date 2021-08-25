@@ -39,3 +39,11 @@ There are several conditions that we need to keep in mind with this accordion:
     </div>
 </div>
 ```
+
+<div class="article-feature">
+    <a href="https://samhermes.com/posts/how-to-make-accessible-accordions/">
+        <p>Learn more about implementing this component:</p>
+        <p class="link-text">samhermes.com/posts/how-to-make-accessible-accordions</p>
+        {% include icons/external-link.svg %}
+    </a>
+</div>

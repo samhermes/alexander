@@ -224,6 +224,34 @@ body {
     padding: 0.4rem 0.8rem;
 }
 
+.article-feature {
+    p {
+        margin-bottom: 0;
+
+        &.link-text {
+            text-decoration: underline;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 1rem 4rem 1rem 1.5rem;
+        background-color: rgba($blue-extra-light, 0.2);
+        border: 1px solid $blue-extra-light;
+        color: $blue-dark;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        position: relative;
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+    }
+}
+
 .page-sources {
     margin-top: 4rem;
 
