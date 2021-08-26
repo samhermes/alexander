@@ -30,15 +30,14 @@ gulp.task('js', function () {
 
 gulp.task('lint', function () {
   return gulp.src('./src/js/**/*.js')
-    .pipe(eslint({fix:true}))
+    .pipe(eslint())
     .pipe(eslint.format())
-    .pipe(gulp.dest(file => file.base))
     .pipe(eslint.failAfterError());
 });
 
 gulp.task('watch', function () {
   gulp.watch('./src/sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('./src/js/**/*.js', gulp.series('js'));
+  gulp.watch('./src/js/**/*.js', gulp.series('lint', 'js'));
 });
 
-gulp.task('default', gulp.parallel('sass', 'js', 'watch'));
+gulp.task('default', gulp.parallel('sass', 'lint', 'js', 'watch'));
