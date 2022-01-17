@@ -4,6 +4,7 @@ sources:
 - https://getbootstrap.com/docs/5.0/content/reboot/
 - https://github.com/necolas/normalize.css/
 - https://piccalil.li/blog/a-modern-css-reset/
+- https://www.joshwcomeau.com/css/custom-css-reset/
 - https://iainbean.com/posts/2021/5-steps-to-faster-web-fonts/
 ---
 
@@ -57,15 +58,13 @@ figure {
     margin: 0 0 1rem;
 }
 
-img {
-    max-width: 100%;
+img, picture, video, canvas, svg {
     display: block;
-    height: auto;
+    max-width: 100%;
 }
 
-img,
-svg {
-    vertical-align: middle;
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 }
 
 p {
@@ -81,40 +80,12 @@ iframe {
     border: 0;
 }
 
-summary {
-    display: list-item;
-    cursor: pointer;
-}
-
-progress {
-    vertical-align: baseline;
+input, button, textarea, select {
+    font: inherit;
 }
 
 [hidden] {
     display: none !important;
-}
-
-blockquote {
-    margin: 0 0 1rem;
-}
-
-ol,
-ul {
-    padding-left: 2rem;
-}
-
-ol,
-ul,
-dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-    margin-bottom: 0;
 }
 ```
 

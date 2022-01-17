@@ -60,15 +60,13 @@ figure {
     margin: 0 0 1rem;
 }
 
-img {
-    max-width: 100%;
+img, picture, video, canvas, svg {
     display: block;
-    height: auto;
+    max-width: 100%;
 }
 
-img,
-svg {
-    vertical-align: middle;
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 }
 
 a {
@@ -79,13 +77,8 @@ iframe {
     border: 0;
 }
 
-summary {
-    display: list-item;
-    cursor: pointer;
-}
-
-progress {
-    vertical-align: baseline;
+input, button, textarea, select {
+    font: inherit;
 }
 
 [hidden] {
