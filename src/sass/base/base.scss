@@ -60,9 +60,13 @@ figure {
     margin: 0 0 1rem;
 }
 
-img, picture, video, canvas, svg {
+img, picture, video, canvas {
     display: block;
     max-width: 100%;
+}
+
+img, svg {
+    vertical-align: middle;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
