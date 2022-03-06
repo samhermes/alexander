@@ -2,6 +2,8 @@
 title: Form
 sources:
 - https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/
+- https://css-tricks.com/better-form-inputs-for-better-mobile-user-experiences/
+- https://css-tricks.com/enterkeyhint/
 ---
 First, of note, the component-level styles include cross-browser fixes, and other general improvements to the rendering of form elements. As these should only be included in a project only if forms are in use, they are not included in the base level styles.
 
