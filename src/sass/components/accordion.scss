@@ -46,8 +46,11 @@
 
     .accordion-content {
         overflow: hidden;
-        transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
         height: 0;
+
+        @media screen and (prefers-reduced-motion: no-preference) {
+			transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+		}
 
         & > :first-child {
             padding-top: 1rem;
