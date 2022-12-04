@@ -2,19 +2,22 @@ const accordions = document.querySelectorAll('.accordion')
 
 accordions.forEach((accordion, index) => {
     const elements = {
-        heading: accordion.querySelector('.accordion-heading'),
+        heading: accordion.querySelector('.accordion-heading > *'),
         content: accordion.querySelector('.accordion-content'),
-        headingChildren: accordion.querySelector('.accordion-heading > *')
+        headingChildren: accordion.querySelector('.accordion-heading > *').innerHTML
     }
 
     const button = document.createElement('button')
     button.setAttribute('type', 'button')
-    button.setAttribute('aria-controls', 'accordion-' + index)
+    button.setAttribute('aria-controls', 'accordion-content-' + index)
+    button.setAttribute('id', 'accordion-button-' + index)
     button.setAttribute('aria-expanded', 'false')
     button.appendChild(elements.headingChildren)
     elements.heading.appendChild(button)
     
-    elements.content.setAttribute('aria-controlledby', 'accordion-' + index)
+    elements.content.setAttribute('id', 'accordion-content-' + index)
+    elements.content.setAttribute('aria-labelledby', 'accordion-button-' + index)
+    elements.content.setAttribute('role', 'region')
 
     button.addEventListener('click', () => {
         const expanded = button.getAttribute('aria-expanded')
