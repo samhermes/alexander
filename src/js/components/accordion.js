@@ -12,7 +12,7 @@ accordions.forEach((accordion, index) => {
     button.setAttribute('aria-controls', 'accordion-content-' + index)
     button.setAttribute('id', 'accordion-button-' + index)
     button.setAttribute('aria-expanded', 'false')
-    button.appendChild(elements.headingChildren)
+    button.innerHTML(elements.headingChildren)
     elements.heading.appendChild(button)
     
     elements.content.setAttribute('id', 'accordion-content-' + index)
