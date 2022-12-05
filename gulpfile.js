@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     eslint = require('gulp-eslint');
 
 gulp.task('sass', function () {
-  var styleSass = gulp.src(['./src/sass/alexander.scss', './src/sass/alexander-base.scss'])
+  var styleSass = gulp.src(['./src/sass/alexander.scss', './src/sass/alexander-base.scss', './src/sass/alexander-elements.scss'])
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))
     .pipe(gulp.dest('./docs/css'));
