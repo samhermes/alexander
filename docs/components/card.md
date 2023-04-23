@@ -14,7 +14,7 @@ A card is a grouping of elements, usually starting with a heading, joined by an 
             <a href="">Call to Action</a>
         </div>
         <div class="card-image">
-            <img src="/img/card-image.jpg" alt="Sunrise Peyto lake Banff national park Canadian Rockies">
+            <img src="{{ '/img/card-image.jpg' | url }}" alt="Sunrise Peyto lake Banff national park Canadian Rockies">
         </div>
     </div>
 </div>
