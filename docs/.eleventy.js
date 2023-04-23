@@ -37,6 +37,7 @@ module.exports = function (config) {
     config.addPassthroughCopy('js')
 
     return {
+        pathPrefix: "/alexander/",
         dir: {
             layouts: "_layouts"
         }

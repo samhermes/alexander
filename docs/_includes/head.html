@@ -5,15 +5,15 @@
     <title>{% if title != "Home" %}{{ title | escape | append: ' - Alexander' }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <link href="{{ site.baseurl }}/css/alexander.css?v=1.0.1" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/docs.css?v=1.0.1" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/home.css?v=1.0.1" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/stage.css?v=1.0.1" rel="stylesheet" id="stage-styles">
+    <link href="{{ '/css/alexander.css?v=1.0.1' | url }}" rel="stylesheet">
+    <link href="{{ '/css/docs.css?v=1.0.1' | url }}" rel="stylesheet">
+    <link href="{{ '/css/home.css?v=1.0.1' | url }}" rel="stylesheet">
+    <link href="{{ '/css/stage.css?v=1.0.1' | url }}" rel="stylesheet" id="stage-styles">
 
     <script type="module">
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
 
-    <script src="{{ site.baseurl }}/js/alexander.js?v=1.0.1" defer></script>
+    <script src="{{ '/js/alexander.js?v=1.0.1' | url }}" defer></script>
 </head>
