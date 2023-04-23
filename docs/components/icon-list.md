@@ -1,5 +1,6 @@
 ---
 title: List with Icons
+layout: default
 ---
 
 <div class="stage">

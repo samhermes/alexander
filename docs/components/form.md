@@ -1,5 +1,6 @@
 ---
 title: Form
+layout: default
 sources:
 - https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/
 - https://css-tricks.com/better-form-inputs-for-better-mobile-user-experiences/

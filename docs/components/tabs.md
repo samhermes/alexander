@@ -1,5 +1,6 @@
 ---
 title: Tabs
+layout: default
 ---
 
 <div class="stage">
@@ -95,6 +96,6 @@ There is a condition that we need to keep in mind with these tabs:
     <a href="https://samhermes.com/posts/how-to-improve-accessibility-tabs/">
         <p>Learn more about implementing this component:</p>
         <p class="link-text">samhermes.com/posts/how-to-improve-accessibility-tabs</p>
-        {% include icons/external-link.svg %}
+        {% include 'icons/external-link.svg' %}
     </a>
 </div>

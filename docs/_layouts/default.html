@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {% include 'head.html' %}
   <body>
     <a class="skip-link screen-reader-text" href="#site-main">Skip to main content</a>
-    {% include header.html %}
+    {% include 'header.html' %}
     
     <div class="page">
       <nav class="page-nav">
-        {% include page-nav.html %}
+        {% include 'page-nav.html' %}
       </nav>
       
       <main class="page-content" id="site-main">
-        <h1 class="page-title">{{ page.title }}</h1>
+        <h1 class="page-title">{{ title }}</h1>
 
         {{ content }}
 
-        {% include sources.html %}
+        {% include 'sources.html' %}
       </main>
     </div>
 
-    {% include footer.html %}
+    {% include 'footer.html' %}
 
     <script async src="{{ site.baseurl }}/js/prism.min.js"></script>
   </body>

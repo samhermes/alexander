@@ -1,5 +1,6 @@
 ---
 title: Screen Reader Text
+layout: default
 sources:
 - https://getbootstrap.com/docs/5.0/helpers/visually-hidden/
 ---

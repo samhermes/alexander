@@ -1,5 +1,6 @@
 ---
 title: Base
+layout: default
 ---
 
 The base includes only what's needed to get started.

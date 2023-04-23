@@ -1,5 +1,6 @@
 ---
 name: Variables
+layout: default
 ---
 
 Naming conventions

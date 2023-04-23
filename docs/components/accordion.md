@@ -1,5 +1,6 @@
 ---
 title: Accordion
+layout: default
 ---
 Accordions act as a way of collapsing otherwise unwieldy content. This can be useful for contexts where its more useful to show an overview of options, such as when dividing by audience or action. They should not be used for aesthetic reasons alone.
 
@@ -44,6 +45,6 @@ There are several conditions that we need to keep in mind with this accordion:
     <a href="https://samhermes.com/posts/how-to-make-accessible-accordions/">
         <p>Learn more about implementing this component:</p>
         <p class="link-text">samhermes.com/posts/how-to-make-accessible-accordions</p>
-        {% include icons/external-link.svg %}
+        {% include 'icons/external-link.svg' %}
     </a>
 </div>

@@ -1,0 +1,23 @@
+/*
+ * Alexander
+ * Version 1.0.0
+ */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    .card-contents {
+        padding: 1.2rem 1.5rem 1.4rem;
+    }
+    
+    .card-image {
+        order: -1;
+        
+        img {
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+    }
+}

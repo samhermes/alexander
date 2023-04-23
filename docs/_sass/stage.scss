@@ -1,8 +1,10 @@
+@import "variables";
+
 /*
  * Adjustments to elements and components for display on stage.
  */
 
-.js {
+ .js {
     .accordion-heading {
         button {
             padding: 1rem 6rem 1rem 1.5rem;
@@ -89,4 +91,11 @@ textarea {
     &[aria-hidden="false"] {
         background: #fff;
     }
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid var(--theme-color, "#333");
+    border-radius: 0.4rem;
+    overflow: hidden; /* To apply border radius to image */
 }
