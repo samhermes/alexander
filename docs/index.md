@@ -8,7 +8,7 @@ layout: home
     <h1 class="title">Alexander</h1>
     <p class="subhead">Front-End Starter Kit</p>
     <div class="get">
-        <p class="version">Version 1.0.1</p>
+        <p class="version">Version 1.0.2</p>
         <a href="https://github.com/samhermes/alexander">
             {% include 'icons/github.svg' %}
             <span class="screen-reader-text">Alexander on GitHub</span>

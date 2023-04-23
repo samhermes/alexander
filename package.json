@@ -1,7 +1,7 @@
 {
   "name": "alexander",
-  "version": "1.0.1",
-  "description": "My design system",
+  "version": "1.0.2",
+  "description": "Front-End Starter Kit",
   "main": "docs/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
