@@ -1,4 +1,5 @@
 const accordions = document.querySelectorAll('.accordion')
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 
 accordions.forEach((accordion, index) => {
     const elements = {
@@ -57,8 +58,14 @@ const closeAccordion = (accordion, elements) => {
         })
     })
 
-    accordion.addEventListener('transitionend', function(){
-        accordion.removeEventListener('transitionend', arguments.callee)
+    if ( reducedMotion.matches ) {
+        // Remove class immediately.
         accordion.classList.remove('is-active')
-    })
+    } else {
+        // Remove class after the transition is over.
+        accordion.addEventListener('transitionend', function(){
+            accordion.removeEventListener('transitionend', arguments.callee)
+            accordion.classList.remove('is-active')
+        })
+    }
 }

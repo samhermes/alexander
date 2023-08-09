@@ -8,11 +8,14 @@
     .accordion-heading {
         button {
             padding: 1rem 6rem 1rem 1.5rem;
-            transition: background-color 0.2s;
             border-top: 2px solid transparent;
             border-left: 2px solid transparent;
             border-right: 2px solid transparent;
             border-radius: $border-radius $border-radius 0 0;
+
+            @media screen and (prefers-reduced-motion: no-preference) {
+                transition: background-color 0.2s;
+            }
 
             &::after {
                 content: '';
@@ -33,7 +36,6 @@
         border-bottom: 2px solid transparent;
         border-left: 2px solid transparent;
         border-right: 2px solid transparent;
-        // transition: background-color 0.2s;
         border-radius: 0 0 $border-radius $border-radius;
     }
 
