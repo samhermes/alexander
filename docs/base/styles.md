@@ -82,6 +82,7 @@ a {
 }
 
 iframe {
+    display: block;
     border: 0;
 }
 
