@@ -1,6 +1,7 @@
 ---
 title: Styles
 layout: default
+section: Base
 sources:
 - https://getbootstrap.com/docs/5.0/content/reboot/
 - https://github.com/necolas/normalize.css/

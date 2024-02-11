@@ -1,6 +1,7 @@
 ---
 title: Tabs
 layout: default
+section: Components
 ---
 
 <div class="stage">

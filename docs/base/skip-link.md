@@ -1,6 +1,7 @@
 ---
 title: Skip Link
 layout: default
+section: Base
 ---
 
 Skip links help a user get directly to the main content of a page, by skipping over the header, navigation, or other interactive elements on the page before the `<main>` element. This element is hidden by default, and becomes visible when focused.

@@ -1,13 +1,18 @@
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: $light-gray;
 }
 
 .site-header {
-    background: $blue-dark;
+    background: #fff;
+    border-bottom: 1px solid $medium-gray;
     padding: 1rem 1.5rem;
 
+    @media screen and (min-width: 50em) {
+        padding: 1rem 3rem;
+    }
+
     a {
-        color: #fff;
         text-decoration: none;
 
         &:hover,
@@ -36,7 +41,6 @@ body {
     }
 
     .get {
-        color: #fff;
         margin-left: auto;
     }
 }
@@ -59,20 +63,19 @@ body {
     font-weight: 600;
     margin-bottom: 0;
     padding-right: 1rem;
-    border-right: 1px solid rgba($blue-extra-light, 0.5);
+    border-right: 1px solid $medium-gray;
     margin-right: 1rem;
 }
 
 .page {
     padding: 1.5rem 1.5rem 4rem;
-    max-width: 80em;
     min-height: calc(100vh - 8.75rem);
     margin: 0 auto;
-    
+
     @media screen and (min-width: 50em) {
-        padding-top: 2.5rem;
+        padding: 2.5rem 3rem 4rem;
         display: grid;
-        grid-gap: 7%;
+        grid-gap: 3%;
         grid-template-columns: minmax(225px, 22%) minmax(0, 1fr);
     }
 }
@@ -95,10 +98,9 @@ body {
         width: 100%;
         display: block;
         margin-bottom: 1.2rem;
-        background: $blue-extra-light;
-        color: $blue-dark;
+        background: $medium-gray;
+        color: $text-color;
         font-weight: 600;
-        text-transform: uppercase;
         border: none;
         border-radius: 0.3rem;
         padding: 0.5rem;
@@ -109,9 +111,7 @@ body {
     }
 
     .nav-top {
-        background-color: rgba($blue-extra-light, 0.2);
-        border-radius: 0.3rem;
-        padding: 1rem 1.2rem;
+        padding: 1rem 0 0;
         display: none;
 
         @media screen and (min-width: 50em) {
@@ -122,7 +122,7 @@ body {
             display: block;
         }
 
-        > li {
+        >li {
             margin-bottom: 2rem;
 
             &:last-child {
@@ -133,13 +133,10 @@ body {
 
     .nav-parent {
         font-weight: 600;
-        color: $blue-dark;
-        text-transform: uppercase;
         margin-bottom: 0.5rem;
     }
 
     a {
-        color: $blue-dark;
         text-decoration: none;
         display: block;
 
@@ -169,15 +166,13 @@ body {
             text-decoration: none;
             display: block;
             padding: 1rem 1.5rem;
-            color: $blue-dark;
-            box-shadow: 0 2px 6px rgba(205, 220, 238, 0.58);
-            border: 2px solid transparent;
+            border: 1px solid $medium-gray;
+            box-shadow: 0 2px 3px #f1f1f1;
             border-radius: 0.8rem;
+            transition: box-shadow 0.3s;
 
-            &:hover,
-            &:focus,
-            &:active {
-                border: 2px solid $blue-medium;
+            &:hover {
+                box-shadow: none;
             }
         }
     }
@@ -186,22 +181,60 @@ body {
 .page-content {
     font-size: 1.2rem;
     background: #fff;
+    padding: 1.5rem 2rem;
+    border: 1px solid $medium-gray;
+    border-radius: 0.625rem;
+
+    @media screen and (min-width: 50em) {
+        padding: 3rem 4rem;
+    }
 
     a {
         word-break: break-word;
     }
 
+    .page-section {
+        margin: 0 0 0.3rem;
+        font-size: 1rem;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
     .page-title {
+        margin-top: 0;
         margin-bottom: 1rem;
 
         @media screen and (min-width: 50em) {
             font-size: 2.6rem;
         }
     }
+
+    p,
+    li {
+        code {
+            font-size: 1rem;
+            background: $light-gray;
+            border: 1px solid #ddd;
+            padding: 0.2em 0.5em;
+            border-radius: 0.2em;
+            word-wrap: break-word;
+
+            @media screen and (min-width: 37.5em) {
+                font-size: 1.1rem;
+            }
+        }
+    }
 }
 
 .stage {
-    background-color: rgba($blue-extra-light, 0.2);
+    background-color: rgba($medium-gray, 0.2);
     border-radius: $border-radius;
     padding: 2rem;
     margin: 2rem 0;
@@ -213,7 +246,7 @@ body {
 }
 
 .stage-toggle {
-    background: $blue-dark;
+    background: $dark-gray;
     border: none;
     border-radius: 0 $border-radius 0 $border-radius;
     color: #fff;
@@ -236,10 +269,10 @@ body {
     a {
         display: block;
         padding: 1rem 4rem 1rem 1.5rem;
-        background-color: rgba($blue-extra-light, 0.2);
-        border: 1px solid $blue-extra-light;
-        color: $blue-dark;
+        background-color: #fff;
+        border: 1px solid $medium-gray;
         border-radius: 0.5rem;
+        box-shadow: 0 2px 3px $box-shadow;
         text-decoration: none;
         position: relative;
     }
@@ -268,10 +301,6 @@ body {
             }
 
             a {
-                padding: 0.2rem 0.5rem 0.3rem;
-                background-color: rgba($blue-extra-light, 0.2);
-                color: $blue-dark;
-                border-radius: 0.5rem;
                 display: inline-block;
             }
         }
@@ -280,8 +309,12 @@ body {
 
 .site-footer {
     padding: 1.5rem;
-    background: $blue-dark;
-    color: #fff;
+    background: #fff;
+    border-top: 1px solid $medium-gray;
+
+    @media screen and (min-width: 50em) {
+        padding: 1.5rem 3rem;
+    }
 
     a {
         color: inherit;

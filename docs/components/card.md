@@ -1,6 +1,7 @@
 ---
 title: Card
 layout: default
+section: Components
 ---
 
 A card is a grouping of elements, usually starting with a heading, joined by an image, paragraph, meta, or link. If the card includes a link, this could be a simple button, or the entire card could link. This pattern creates a variety of issues, as getting the markup, interactivity, and accessibility considerations all set is a delicate balancing act. See [Inclusive Components](https://inclusive-components.design/cards/) for more information about how to approaach them.

@@ -1,6 +1,7 @@
 ---
 title: List with Icons
 layout: default
+section: Components
 ---
 
 <div class="stage">

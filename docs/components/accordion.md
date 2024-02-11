@@ -1,6 +1,7 @@
 ---
 title: Accordion
 layout: default
+section: Components
 ---
 Accordions act as a way of collapsing otherwise unwieldy content. This can be useful for contexts where its more useful to show an overview of options, such as when dividing by audience or action. They should not be used for aesthetic reasons alone.
 

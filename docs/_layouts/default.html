@@ -11,6 +11,9 @@
       </nav>
       
       <main class="page-content" id="site-main">
+        {% if section %}
+          <p class="page-section">{{ section }}</p>
+        {% endif %}
         <h1 class="page-title">{{ title }}</h1>
 
         {{ content }}

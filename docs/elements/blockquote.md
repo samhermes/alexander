@@ -1,6 +1,7 @@
 ---
 title: Blockquote
 layout: default
+section: Elements
 ---
 
 Blockquotes receive bottom margin, which is removed if it is the last child element. This keeps things neat and tidy for the parent container.

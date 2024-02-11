@@ -1,6 +1,7 @@
 ---
 title: HR
 layout: default
+section: Elements
 ---
 
 What is more mysterious than a horizontal line? Useful for separating sections of content, this humble element doesn't need much.

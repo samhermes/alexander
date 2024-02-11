@@ -1,6 +1,7 @@
 ---
 title: HTML
 layout: default
+section: Base
 sources:
 - https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template
 - https://matuzo.at/blog/html-boilerplate/

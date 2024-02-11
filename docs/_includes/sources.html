@@ -1,8 +1,8 @@
-{% if page.sources %}
+{% if sources %}
 <div class="page-sources">
     <h2 class="heading-5">Sources</h2>
     <ul>
-        {% for source in page.sources %}
+        {% for source in sources %}
         <li><a href="{{source}}">{{source | remove:'http://' | remove:'https://'}}</a></li>
         {% endfor %}
     </ul>

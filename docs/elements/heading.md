@@ -1,6 +1,7 @@
 ---
 title: Heading
 layout: default
+section: Elements
 sources:
 - https://type-scale.com/?size=16&scale=1.200
 - https://www.layoutgridcalculator.com/typographic-scale/
