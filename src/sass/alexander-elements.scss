@@ -1,10 +1,8 @@
-@import 'variables';
-
 // Elements
-@import 'elements/blockquote';
-@import 'elements/code';
-@import 'elements/heading';
-@import 'elements/hr';
-@import 'elements/list';
-@import 'elements/paragraph';
-@import 'elements/table';
+@use 'elements/blockquote';
+@use 'elements/code';
+@use 'elements/heading';
+@use 'elements/hr';
+@use 'elements/list';
+@use 'elements/paragraph';
+@use 'elements/table';

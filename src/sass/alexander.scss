@@ -1,23 +1,14 @@
-@import 'variables';
-
 // Base - always included
-@import 'base/base';
-@import 'base/screen-reader-text';
-@import 'base/skip-link';
-@import 'base/form';
+@use 'base/base';
+@use 'base/screen-reader-text';
+@use 'base/skip-link';
+@use 'base/form';
 
 // Elements - project by project
-@import 'elements/blockquote';
-@import 'elements/heading';
-@import 'elements/code';
-@import 'elements/hr';
-@import 'elements/list';
-@import 'elements/paragraph';
-@import 'elements/table';
-
-// Components - as needed
-@import 'components/accordion';
-@import 'components/card';
-@import 'components/form';
-@import 'components/icon-list';
-@import 'components/tabs';
+@use 'elements/blockquote';
+@use 'elements/heading';
+@use 'elements/code';
+@use 'elements/hr';
+@use 'elements/list';
+@use 'elements/paragraph';
+@use 'elements/table';

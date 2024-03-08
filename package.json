@@ -2,10 +2,6 @@
   "name": "alexander",
   "version": "1.0.3",
   "description": "Front-End Starter Kit",
-  "main": "docs/index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samhermes/alexander.git"
@@ -16,11 +12,20 @@
     "url": "https://github.com/samhermes/alexander/issues"
   },
   "homepage": "https://github.com/samhermes/alexander#readme",
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "dev": "npm-run-all --parallel watch:*",
+    "build:css": "sass src/sass:dist/css --no-source-map --style=compressed",
+    "build:js": "uglifyjs src/js/**/*.js --compress --mangle --output dist/js/alexander.js",
+    "lint": "eslint src/js/**/*.js",
+    "watch:css": "sass --watch src/sass:dist/css --no-source-map --style=compressed",
+    "watch:js": "onchange src/js/**/*.js -- npm run lint && npm run build:js"
+  },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^6.0.0",
-    "gulp-minify": "^3.1.0",
-    "gulp-sass": "^4.1.0"
+    "eslint": "^8.57.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "sass": "^1.71.1",
+    "uglify-js": "^3.17.4"
   }
 }

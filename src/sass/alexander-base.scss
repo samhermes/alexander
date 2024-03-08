@@ -1,7 +1,5 @@
-@import 'variables';
-
 // Base - always included
-@import 'base/base';
-@import 'base/screen-reader-text';
-@import 'base/skip-link';
-@import 'base/form';
+@use 'base/base';
+@use 'base/screen-reader-text';
+@use 'base/skip-link';
+@use 'base/form';
