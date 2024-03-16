@@ -1,5 +1,5 @@
 /**
- * Component Name: Accordion
+ * Component Name: Accordions
  * Version: 1.0.4
  * 
  * Collapse a content area under a heading.
@@ -7,7 +7,7 @@
  * @param {string} selector Class name or ID of accordion elements.
  */
 
-const Accordion = (selector = '.accordion') => {
+export const Accordions = (selector = '.accordion') => {
     // Get all accordions on page, using custom selector or default.
     const accordions = document.querySelectorAll(selector)
 
@@ -92,5 +92,3 @@ const Accordion = (selector = '.accordion') => {
     // Start the component.
     init()
 }
-
-export default Accordion
