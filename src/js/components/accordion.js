@@ -25,6 +25,9 @@ export const Accordions = (selector = '.accordion') => {
                 headingChildren: accordion.querySelector('.accordion-heading > *').innerHTML
             }
 
+            // Set active class so that we can apply styles if JavaScript is running
+            accordion.classList.add('is-accordion')
+
             const button = document.createElement('button')
             button.setAttribute('type', 'button')
             button.setAttribute('aria-controls', 'accordion-content-' + index)

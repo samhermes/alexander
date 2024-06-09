@@ -9,64 +9,64 @@
     &:last-child {
         margin-bottom: 0;
     }
-}
 
-.js {
-    .accordion {
+    &.is-accordion {
         margin-bottom: 0.5rem;
-    }
 
-    .accordion-heading {
-        cursor: pointer;
-        position: relative;
+        .accordion-heading {
+            cursor: pointer;
+            position: relative;
 
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: 1.3rem;
-            margin: 0;
-        }
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 1.3rem;
+                margin: 0;
+            }
 
-        button {
-            background: none;
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-            padding: 0;
-            margin: 0;
-            color: inherit;
-            display: block;
-            width: 100%;
-            text-align: left;
+            button {
+                background: none;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                color: inherit;
+                display: block;
+                width: 100%;
+                text-align: left;
 
-            &:hover,
-            &:focus {
-                text-decoration: underline;
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
             }
         }
-    }
 
-    .accordion-content {
-        overflow: hidden;
-        height: 0;
+        .accordion-content {
+            overflow: hidden;
+            height: 0;
+            visibility: hidden;
 
-        @media screen and (prefers-reduced-motion: no-preference) {
-            transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-        }
+            @media screen and (prefers-reduced-motion: no-preference) {
+                transition: height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+            }
 
-        @media print {
-            height: auto;
-        }
+            @media print {
+                height: auto;
+                visibility: visible;
+            }
 
-        & > :first-child {
-            padding-top: 1rem;
-        }
+            & > :first-child {
+                padding-top: 1rem;
+            }
 
-        & > :last-child {
-            margin-bottom: 0;
-            padding-bottom: 2rem;
+            & > :last-child {
+                margin-bottom: 0;
+                padding-bottom: 2rem;
+            }
         }
     }
 }
