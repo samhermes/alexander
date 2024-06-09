@@ -1,6 +1,6 @@
 /**
  * Component Name: Accordions
- * Version: 1.0.4
+ * Version: 1.0.6
  *
  * Collapse a content area under a heading.
  *
