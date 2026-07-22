@@ -11,7 +11,6 @@ module.exports = {
         "sourceType": "module",
     },
     "rules": {
-        "semi": ["error", "never"],
         "quotes": ["error", "single"],
         "no-console": ["error", { allow: ["warn", "error"] }]
     }
