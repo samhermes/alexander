@@ -84,5 +84,6 @@ class Accordion extends HTMLElement {
         });
     }
 }
+export default Accordion;
 
 customElements.define('alexander-accordion', Accordion);

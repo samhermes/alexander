@@ -1,23 +1,17 @@
 /**
  * Component Name: Tabs
- * Version: 1.0.4
+ * Version: 1.1.0
  *
  * Divide content areas into tabbed interface.
- *
- * @param {string} selector Class name or ID of tab elements.
  */
 
-export const Tabs = (selector = '.tabs') => {
-    // Get all tabs on page, using custom selector or default.
-    const tabs = document.querySelectorAll(selector)
-
-    // If no tabs are found, return.
-    if ( !tabs ) {
-        return
+class Tabs extends HTMLElement {
+    constructor() {
+        super();
     }
 
-    tabs.forEach((tabContainer) => {
-        const tabs = tabContainer.querySelectorAll('[role="tab"]')
+    connectedCallback() {
+        const tabs = this.querySelectorAll('[role="tab"]')
 
         tabs.forEach((tab) => {
             tab.addEventListener('click', (e) => {
@@ -38,5 +32,8 @@ export const Tabs = (selector = '.tabs') => {
                 tabPanel.setAttribute('aria-hidden', 'false')
             })
         })
-    })
+    }
 }
+export default Tabs;
+
+customElements.define('alexander-tabs', Tabs);

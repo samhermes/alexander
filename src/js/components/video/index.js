@@ -1,23 +1,17 @@
 /**
- * Component Name: Videos
- * Version: 1.0.0
+ * Component Name: Video
+ * Version: 1.1.0
  *
  * Add custom controls to a video element.
- *
- * @param {string} selector Class name or ID of video element container.
  */
 
-export const Videos = (selector = '.video') => {
-    // Get all video elements on page, using custom selector or default.
-    const videos = document.querySelectorAll(selector)
-
-    // If no video elements are found, return.
-    if (!videos) {
-        return
+class Video extends HTMLElement {
+    constructor() {
+        super();
     }
 
-    videos.forEach((video) => {
-        const videoElement = video.querySelectorAll('video')
+    connectedCallback() {
+        const videoElement = this.querySelector('video')
         const controlContainer = document.createElement('div')
         const playButton = document.createElement('button')
         const pauseButton = document.createElement('button')
@@ -50,5 +44,8 @@ export const Videos = (selector = '.video') => {
             playButton.classList.remove('hidden')
             playButton.focus()
         })
-    })
+    }
 }
+export default Video;
+
+customElements.define('alexander-video', Video);
