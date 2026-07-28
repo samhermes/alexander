@@ -5,7 +5,7 @@
  * Collapse a content area under a heading.
  */
 
-export class Accordion extends HTMLElement {
+export default class Accordion extends HTMLElement {
     constructor() {
         super();
     }

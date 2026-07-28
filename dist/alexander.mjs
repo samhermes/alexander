@@ -1,0 +1,76 @@
+//#region src/js/components/accordion/index.js
+var e = class extends HTMLElement {
+	constructor() {
+		super();
+	}
+	open(e, t) {
+		let n = t.content.scrollHeight;
+		t.content.style.height = n + "px", t.content.addEventListener("transitionend", function() {
+			t.content.style.height = "auto";
+		}, { once: !0 }), e.classList.add("is-active");
+	}
+	close(e, t) {
+		let n = window.matchMedia("(prefers-reduced-motion: reduce)"), r = t.content.scrollHeight, i = t.content.style.transition;
+		t.content.style.transition = "", requestAnimationFrame(() => {
+			t.content.style.height = r + "px", t.content.style.transition = i, requestAnimationFrame(() => {
+				t.content.style.height = "0px";
+			});
+		}), n.matches ? e.classList.remove("is-active") : e.addEventListener("transitionend", function() {
+			e.classList.remove("is-active");
+		}, { once: !0 });
+	}
+	connectedCallback() {
+		let e = {
+			heading: this.querySelector(".accordion-heading > *"),
+			content: this.querySelector(".accordion-content"),
+			headingChildren: this.querySelector(".accordion-heading > *").innerHTML
+		};
+		this.classList.add("is-accordion");
+		let t = document.createElement("button"), n = Math.random().toString(16).slice(2);
+		t.setAttribute("type", "button"), t.setAttribute("aria-controls", "accordion-content-" + n), t.setAttribute("id", "accordion-button-" + n), t.setAttribute("aria-expanded", "false"), t.innerHTML = e.headingChildren, e.heading.innerHTML = "", e.heading.appendChild(t), e.content.setAttribute("id", "accordion-content-" + n), e.content.setAttribute("aria-labelledby", "accordion-button-" + n), e.content.setAttribute("role", "region"), t.addEventListener("click", () => {
+			let n = t.getAttribute("aria-expanded");
+			n === "true" ? t.setAttribute("aria-expanded", "false") : t.setAttribute("aria-expanded", "true"), n === "true" ? this.close(this, e) : this.open(this, e);
+		});
+	}
+};
+customElements.define("alexander-accordion", e);
+//#endregion
+//#region src/js/components/tabs/index.js
+var t = class extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let e = this.querySelectorAll("[role=\"tab\"]");
+		e.forEach((t) => {
+			t.addEventListener("click", (n) => {
+				n.preventDefault(), e.forEach((e) => {
+					e.setAttribute("aria-selected", "false");
+				}), t.setAttribute("aria-selected", "true");
+				let r = t.getAttribute("aria-controls"), i = tabContainer.querySelector("#" + r.toString());
+				tabContainer.querySelectorAll("[role=\"tabpanel\"]").forEach((e) => {
+					e.setAttribute("aria-hidden", "true");
+				}), i.setAttribute("aria-hidden", "false");
+			});
+		});
+	}
+};
+customElements.define("alexander-tabs", t);
+//#endregion
+//#region src/js/components/video/index.js
+var n = class extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let e = this.querySelector("video"), t = document.createElement("div"), n = document.createElement("button"), r = document.createElement("button");
+		t.classList.add("video-controls"), n.setAttribute("type", "button"), n.innerHTML = "<span class=\"screen-reader-text\">Play</span>", n.classList.add("control-play"), n.classList.add("hidden"), r.setAttribute("type", "button"), r.innerHTML = "<span class=\"screen-reader-text\">Pause</span>", r.classList.add("control-pause"), t.appendChild(n), t.appendChild(r), e.after(t), n.addEventListener("click", () => {
+			e.play(), n.classList.add("hidden"), r.classList.remove("hidden"), r.focus();
+		}), r.addEventListener("click", () => {
+			e.pause(), r.classList.add("hidden"), n.classList.remove("hidden"), n.focus();
+		});
+	}
+};
+customElements.define("alexander-video", n);
+//#endregion
+export { e as Accordion, t as Tabs, n as Video };

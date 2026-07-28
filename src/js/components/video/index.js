@@ -5,7 +5,7 @@
  * Add custom controls to a video element.
  */
 
-export class Video extends HTMLElement {
+export default class Video extends HTMLElement {
     constructor() {
         super();
     }

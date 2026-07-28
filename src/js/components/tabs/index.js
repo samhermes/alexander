@@ -5,7 +5,7 @@
  * Divide content areas into tabbed interface.
  */
 
-export class Tabs extends HTMLElement {
+export default class Tabs extends HTMLElement {
     constructor() {
         super();
     }
