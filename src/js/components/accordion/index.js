@@ -5,7 +5,7 @@
  * Collapse a content area under a heading.
  */
 
-class Accordion extends HTMLElement {
+export class Accordion extends HTMLElement {
     constructor() {
         super();
     }
@@ -84,6 +84,5 @@ class Accordion extends HTMLElement {
         });
     }
 }
-export default Accordion;
 
 customElements.define('alexander-accordion', Accordion);

@@ -5,7 +5,7 @@
  * Divide content areas into tabbed interface.
  */
 
-class Tabs extends HTMLElement {
+export class Tabs extends HTMLElement {
     constructor() {
         super();
     }
@@ -34,6 +34,5 @@ class Tabs extends HTMLElement {
         })
     }
 }
-export default Tabs;
 
 customElements.define('alexander-tabs', Tabs);
