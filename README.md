@@ -25,9 +25,9 @@ Creates an interactive accordion component, with the proper attributes applied t
 How to use:
 
 ```js
-import { Accordions } from 'alexander';
+import { Accordion } from 'alexander';
 
-Accordions();
+new Accordion();
 ```
 
 Parameters:
@@ -46,7 +46,7 @@ How to use:
 ```js
 import { Tabs } from 'alexander';
 
-Tabs();
+new Tabs();
 ```
 
 Parameters:
@@ -63,9 +63,9 @@ Adds custom video controls to HTML `video` elements, with the proper attributes 
 How to use:
 
 ```js
-import { Videos } from 'alexander';
+import { Video } from 'alexander';
 
-Videos();
+new Video();
 ```
 
 Parameters:
