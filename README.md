@@ -30,11 +30,8 @@ import { Accordion } from 'alexander';
 new Accordion();
 ```
 
-Parameters:
-- `selector`: A string for customizing the accordion selector. Default: `.accordion`
-
 Files:
-- `src/js/components/accordion.js`
+- `src/js/components/accordion/index.js`
 - `src/sass/components/_accordion.scss`
 
 ### Tabs
@@ -49,11 +46,8 @@ import { Tabs } from 'alexander';
 new Tabs();
 ```
 
-Parameters:
-- `selector`: A string for customizing the tabs selector. Default: `.tabs`
-
 Files:
-- `src/js/components/tabs.js`
+- `src/js/components/tabs/index.js`
 - `src/sass/components/_tabs.scss`
 
 ### Video Controls
@@ -68,9 +62,6 @@ import { Video } from 'alexander';
 new Video();
 ```
 
-Parameters:
-- `selector`: A string for customizing the video selector. Default: `.video`
-
 Files:
-- `src/js/components/video.js`
+- `src/js/components/video/index.js`
 - `src/sass/components/_videos.scss`
