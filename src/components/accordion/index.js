@@ -34,8 +34,8 @@ export default class Accordion extends HTMLElement {
             elements.content.style.transition = elementTransition;
             requestAnimationFrame(() => {
                 elements.content.style.height = 0 + 'px';
-            })
-        })
+            });
+        });
 
         if (reducedMotion.matches) {
             // Remove class immediately.

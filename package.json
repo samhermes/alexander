@@ -12,6 +12,7 @@
     "url": "https://github.com/samhermes/alexander/issues"
   },
   "homepage": "https://github.com/samhermes/alexander#readme",
+  "type": "module",
   "main": "dist/js/alexander.js",
   "exports": {
     ".": {
@@ -23,13 +24,14 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "lint": "eslint src/js/**/*.js"
+    "lint": "eslint src/**/*.js"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
     "eslint": "^10.8.0",
+    "eslint-plugin-compat": "^7.0.2",
     "sass": "^1.71.1",
     "vite": "^8.1.5"
   }

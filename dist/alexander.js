@@ -1,4 +1,4 @@
-//#region src/js/components/accordion/index.js
+//#region src/components/accordion/index.js
 var e = class extends HTMLElement {
 	constructor() {
 		super();
@@ -35,7 +35,7 @@ var e = class extends HTMLElement {
 };
 customElements.define("alexander-accordion", e);
 //#endregion
-//#region src/js/components/tabs/index.js
+//#region src/components/tabs/index.js
 var t = class extends HTMLElement {
 	constructor() {
 		super();
@@ -57,7 +57,7 @@ var t = class extends HTMLElement {
 };
 customElements.define("alexander-tabs", t);
 //#endregion
-//#region src/js/components/video/index.js
+//#region src/components/video/index.js
 var n = class extends HTMLElement {
 	constructor() {
 		super();
