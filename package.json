@@ -24,15 +24,18 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "storybook": "storybook dev -p 6006"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
+    "@storybook/web-components-vite": "^10.5.5",
     "eslint": "^10.8.0",
     "eslint-plugin-compat": "^7.0.2",
     "sass": "^1.71.1",
+    "storybook": "^10.5.5",
     "vite": "^8.1.5"
   }
 }

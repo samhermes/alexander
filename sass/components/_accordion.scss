@@ -3,7 +3,7 @@
  * Version 1.0.6
  */
 
-.accordion {
+alexander-accordion {
     margin-bottom: 2rem;
 
     &:last-child {
@@ -68,5 +68,11 @@
                 padding-bottom: 2rem;
             }
         }
+
+        &.is-active {
+			.accordion-content {
+				visibility: visible;
+			}
+		}
     }
 }

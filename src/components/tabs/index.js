@@ -23,8 +23,8 @@ export default class Tabs extends HTMLElement {
                 tab.setAttribute('aria-selected', 'true');
 
                 const tabPanelID = tab.getAttribute('aria-controls');
-                const tabPanel = tabContainer.querySelector('#' + tabPanelID.toString());
-                const allTabPanels = tabContainer.querySelectorAll('[role="tabpanel"]');
+                const tabPanel = this.querySelector('#' + tabPanelID.toString());
+                const allTabPanels = this.querySelectorAll('[role="tabpanel"]');
 
                 allTabPanels.forEach((tab) => {
                     tab.setAttribute('aria-hidden', 'true');

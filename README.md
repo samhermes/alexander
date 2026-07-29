@@ -77,7 +77,7 @@ How to use:
 
 ```html
 <alexander-tabs>
-<ul role="tablist">
+    <ul role="tablist">
         <li role="presentation">
             <button type="button" id="tab-1" role="tab" aria-controls="tab-1-panel" aria-selected="true">Tab 1</button>
         </li>

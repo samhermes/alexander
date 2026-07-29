@@ -1,0 +1,33 @@
+import './index.js';
+import '../../../sass/components/_tabs.scss';
+
+export default {
+    component: 'alexander-tabs',
+    render: () => (
+        `<alexander-tabs>
+            <ul role="tablist">
+                <li role="presentation">
+                    <button type="button" id="tab-1" role="tab" aria-controls="tab-1-panel" aria-selected="true">Tab 1</button>
+                </li>
+                <li role="presentation">
+                    <button type="button" id="tab-2" role="tab" aria-controls="tab-2-panel" aria-selected="false">Tab 2</button>
+                </li>
+                <li role="presentation">
+                    <button type="button" id="tab-3" role="tab" aria-controls="tab-3-panel" aria-selected="false">Tab 3</button>
+                </li>
+            </ul>
+            <div id="tab-1-panel" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
+                <p>Tab 1 content</p>
+            </div>
+            <div id="tab-2-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+                <p>Tab 2 content</p>
+            </div>
+            <div id="tab-3-panel" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+                <p>Tab 3 content</p>
+            </div>
+        </alexander-tabs>`
+    ),
+    title: 'Tabs',
+};
+
+export const Default = {};
