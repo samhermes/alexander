@@ -16,26 +16,26 @@ npm install samhermes/alexander#1.1.1
 
 ## Styles
 
-You can import the base and element styles into your project by importing the main stylesheet:
+You can import the base and element SCSS into your project with `@use`:
 
-```css
-@import 'alexander/scss';
+```scss
+@use '/node_modules/alexander/scss';
 ```
 
-Alternatively, you can import the base or element styles as needed, either as groups or individually.
+Alternatively, you can include the base or element SCSS as needed, either as groups or individually.
 
-```css
-@import 'alexander/scss/base';
-@import 'alexander/scss/elements';
+```scss
+@use '/node_modules/alexander/scss/base';
+@use '/node_modules/alexander/scss/elements';
 
 // Individual element.
-@import 'alexander/scss/elements/blockquote';
+@use '/node_modules/alexander/scss/elements/blockquote';
 ```
 
-All component styles need to be imported individually.
+All component SCSS needs to be included individually.
 
-```css
-@import 'alexander/scss/components/card';
+```scss
+@use '/node_modules/alexander/scss/components/card';
 ```
 
 ## Components
@@ -65,8 +65,8 @@ import { Accordion } from 'alexander';
 new Accordion();
 ```
 
-```css
-@import 'alexander/scss/components/accordion';
+```scss
+@use '/node_modules/alexander/scss/components/accordion';
 ```
 
 ### Tabs
@@ -106,8 +106,8 @@ import { Tabs } from 'alexander';
 new Tabs();
 ```
 
-```css
-@import 'alexander/scss/components/tabs';
+```scss
+@use '/node_modules/alexander/scss/components/tabs';
 ```
 
 ### Video Controls
@@ -128,6 +128,6 @@ import { Video } from 'alexander';
 new Video();
 ```
 
-```css
-@import 'alexander/scss/components/video';
+```scss
+@use '/node_modules/alexander/scss/components/video';
 ```
