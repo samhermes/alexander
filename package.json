@@ -29,7 +29,7 @@
   },
   "files": [
     "dist",
-    "sass"
+    "scss"
   ],
   "devDependencies": {
     "@storybook/web-components-vite": "^10.5.5",
