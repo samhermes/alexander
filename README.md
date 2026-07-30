@@ -11,7 +11,7 @@ Alexander was built in two distinct levels, a base level that includes browser c
 Install Alexander from GitHub using npm with:
 
 ```bash
-npm install samhermes/alexander#1.1.0
+npm install samhermes/alexander#1.1.1
 ```
 
 ## Styles
