@@ -28,7 +28,8 @@
     "storybook": "storybook dev -p 6006"
   },
   "files": [
-    "dist"
+    "dist",
+    "sass"
   ],
   "devDependencies": {
     "@storybook/web-components-vite": "^10.5.5",
