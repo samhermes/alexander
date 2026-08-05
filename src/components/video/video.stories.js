@@ -5,7 +5,7 @@ export default {
     component: 'alexander-video',
     render: ({ video }) => (
         `<alexander-video>
-            <video playsinline src="${video}" style="width:100%;height:auto;max-width:600px;"></video>
+            <video autoplay loop playsinline src="${video}" style="width:100%;height:auto;max-width:600px;"></video>
         </alexander-video>`
     ),
     title: 'Video',
