@@ -1,5 +1,5 @@
 import './index.js';
-import '../../../sass/components/_video.scss';
+import '../../../scss/components/_video.scss';
 
 export default {
     component: 'alexander-video',

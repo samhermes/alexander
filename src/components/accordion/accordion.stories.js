@@ -1,5 +1,5 @@
 import './index.js';
-import '../../../sass/components/_accordion.scss';
+import '../../../scss/components/_accordion.scss';
 
 export default {
     component: 'alexander-accordion',

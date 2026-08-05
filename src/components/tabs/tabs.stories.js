@@ -1,5 +1,5 @@
 import './index.js';
-import '../../../sass/components/_tabs.scss';
+import '../../../scss/components/_tabs.scss';
 
 export default {
     component: 'alexander-tabs',

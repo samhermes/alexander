@@ -47,8 +47,8 @@ var t = class extends HTMLElement {
 				n.preventDefault(), e.forEach((e) => {
 					e.setAttribute("aria-selected", "false");
 				}), t.setAttribute("aria-selected", "true");
-				let r = t.getAttribute("aria-controls"), i = tabContainer.querySelector("#" + r.toString());
-				tabContainer.querySelectorAll("[role=\"tabpanel\"]").forEach((e) => {
+				let r = t.getAttribute("aria-controls"), i = this.querySelector("#" + r.toString());
+				this.querySelectorAll("[role=\"tabpanel\"]").forEach((e) => {
 					e.setAttribute("aria-hidden", "true");
 				}), i.setAttribute("aria-hidden", "false");
 			});
