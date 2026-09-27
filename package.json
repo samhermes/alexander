@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/samhermes/alexander#readme",
   "type": "module",
-  "main": "dist/js/alexander.js",
+  "main": "dist/alexander.js",
   "exports": {
     ".": {
       "import": "./dist/alexander.js",
