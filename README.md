@@ -19,23 +19,23 @@ npm install @samhermes/alexander
 You can import the base and element SCSS into your project with `@use`:
 
 ```scss
-@use '/node_modules/alexander/scss';
+@use '@samhermes/alexander/scss';
 ```
 
 Alternatively, you can include the base or element SCSS as needed, either as groups or individually.
 
 ```scss
-@use '/node_modules/alexander/scss/base';
-@use '/node_modules/alexander/scss/elements';
+@use '@samhermes/alexander/scss/base';
+@use '@samhermes/alexander/scss/elements';
 
 // Individual element.
-@use '/node_modules/alexander/scss/elements/blockquote';
+@use '@samhermes/alexander/scss/elements/blockquote';
 ```
 
 All component SCSS needs to be included individually.
 
 ```scss
-@use '/node_modules/alexander/scss/components/card';
+@use '@samhermes/alexander/scss/components/card';
 ```
 
 ## Components
@@ -66,7 +66,7 @@ new Accordion();
 ```
 
 ```scss
-@use '/node_modules/alexander/scss/components/accordion';
+@use '@samhermes/alexander/scss/components/accordion';
 ```
 
 ### Tabs
@@ -107,7 +107,7 @@ new Tabs();
 ```
 
 ```scss
-@use '/node_modules/alexander/scss/components/tabs';
+@use '@samhermes/alexander/scss/components/tabs';
 ```
 
 ### Video Controls
@@ -129,5 +129,5 @@ new Video();
 ```
 
 ```scss
-@use '/node_modules/alexander/scss/components/video';
+@use '@samhermes/alexander/scss/components/video';
 ```
